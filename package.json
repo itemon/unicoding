@@ -1,0 +1,20 @@
+{
+  "name": "unicoding",
+  "version": "1.0.0",
+  "description": "unicode related utility",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "unicode",
+    "for",
+    "js"
+  ],
+  "author": "huangwei",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
