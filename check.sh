@@ -7,7 +7,6 @@ LIST_NOT_ALLOWED="taobao hello"
 for keyword in $LIST_NOT_ALLOWED
 do
   echo "\nstart finding keyword "$keyword"..."
-  #grep $keyword -R --exclude-dir "node_modules" --color --exclude="*.sh" ./ #
   found=`grep $keyword -R --exclude-dir "node_modules" --color --exclude="*.sh" ./`
   found_lines=0
   for l in $found
@@ -16,7 +15,9 @@ do
   done
   if [ $found_lines \> 0 ];
   then
-    echo "and found $found_lines match, this is not allowd!!!\n"
+    echo "and found $found_lines match, THIS IS NOT ALLOWED!!!\n"
     exit 1
+  else
+    echo "and found nothing, well done!"
   fi
 done
