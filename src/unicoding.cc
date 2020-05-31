@@ -22,7 +22,7 @@ namespace unicoding {
 
   // print binary reprent
   template<typename T>
-  void print_binary(uint8_t t);
+  void print_binary(T t);
 
   template<typename T>
   void print_binary(/*uint8_t*/T t) {
