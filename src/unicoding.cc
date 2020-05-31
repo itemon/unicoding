@@ -45,11 +45,12 @@ namespace unicoding {
   }
 
   Local<String> translateCodePoint(Local<String> str) {
-    uint8_t buf[str->Utf8Length()];
-    str->WriteOneByte(buf);
+    char buf[str->Utf8Length()];
+    str->WriteUtf8(buf);
 
     for (int i = 0; i < str->Utf8Length(); ++i) {
-      std::cout << (int)buf[i] << std::endl;
+      print_binary(buf[i]);
+      //std::cout << (int)buf[i] << std::endl;
     }
     return Local<String>{};
   }
