@@ -7,4 +7,6 @@ console.log('>', unicoding.calculateUTFInfo("ḱ"));
 console.log('---->', unicoding.calculateUTFInfo("𐐷"));
 console.log('---->', unicoding.calculateUTFInfo("🤦"));
 
+console.log('done');
+
 module.exports = unicoding;
